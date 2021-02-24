@@ -1,0 +1,178 @@
+@import "global.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+header img{
+    width: 100px;
+    height: 90px;
+    margin: 30px 30px 0px 0px;
+}
+
+.navbar{
+    padding: 30px;
+    margin-top: 70px;
+    position: relative;
+}
+
+.navbar li{
+    list-style: none;
+    text-transform: capitalize;
+    padding: 12px;
+    
+}
+.navbar li:nth-child(1) a {
+  color:rgba(134, 7, 7, 0.829);
+}
+
+.navbar li:nth-child(1) a::before{
+ content: " ";
+ display: block;
+ width: 3rem;
+ height: 2px;
+ background:rgba(134, 7, 7, 0.829);
+ position: absolute;
+ top: 22%;
+}
+.navbar li a{
+    color: #fff;
+    text-decoration:none;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navbar li a:hover{
+  color: rgb(104, 96, 96);
+}
+h1,h2{
+  padding: 3px; 
+  font-size: 2.5rem;
+}
+h2::before{
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 40px;
+  background:#fff;
+  transform: rotate(90deg);
+  margin:10px 10px 0px 0px;
+}
+
+h1::after,h2::after{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+  }
+span{
+  color:rgba(134, 7, 7, 0.829);
+    font-size:3rem;
+}
+.footer-section p{
+  font-size: 0.9rem;
+  font-weight: 500;
+  
+}
+
+
+.arrow img,.arrimg img,.contacts-arrow img{
+  transition: 1s;
+   cursor: pointer;
+   
+}
+.arrow img:hover,.arrimg img:hover,.contacts-arrow img:hover{
+  transform: scale(1.5);
+}
+
+.arrow::after{
+  content: "Profile";
+  display: block;
+  position: absolute;
+  bottom: 22%;
+  left: 47%;
+  font-weight: bold;
+  color:rgba(134, 7, 7, 0.829);
+  cursor: pointer;
+}
+.social-links img{
+  padding: 5px;
+  width: 30px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.social-links img:hover{
+  transform: scale(1.5);
+}
+
+.remover,.cancel {
+  position: absolute;
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 400;
+  transform: rotate(45deg);
+  top: 2%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.remover:hover,.cancel:hover{
+  color: #999;
+}
+.technical-background p::before{
+   content: open-quote;
+   font-size: 2rem;
+   color:rgba(134, 7, 7, 0.829);
+} 
+
+.technical-background p::after{
+  content: close-quote;
+  font-size: 2rem;
+  color:rgba(134, 7, 7, 0.829);
+}
+.content .profile-img{
+   width: 120px;
+}
+.content button{
+  position: absolute;
+  left: 1%;
+  bottom: 10%;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  background:rgba(134, 7, 7, 0.829);
+  font-weight: 600;
+  transition: 1.2s;
+  cursor: pointer;
+}
+.content button:hover{
+  transform: scale(1.3);
+  box-shadow: 2px 2px 1px rgba(228, 62, 62, 0.192);
+}
+
+.projects-arrow::after {
+   content: "projects";
+   display: block;
+   font-weight: bolder;
+  color:rgba(134, 7, 7, 0.829);
+   position: absolute;
+   bottom: 8%;
+   right: 47%;
+} 
+
+.contacts-arrow {
+  position: absolute;
+  bottom: 14%;
+  right: 50%;
+  
+}
+
+.contacts-arrow::after{
+  content: "contacts";
+  display: block;
+  font-weight: bolder;
+  color:rgba(134, 7, 7, 0.829);
+   
+
+}
