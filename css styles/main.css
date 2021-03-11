@@ -1,10 +1,21 @@
 @import "global.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
 
 header img{
-    width: 100px;
-    height: 90px;
+    width: 150px;
+    height: 150px;
     margin: 30px 30px 0px 0px;
+    
+}
+
+header h1{
+  font-size: 2.2em;
+  font-weight: 800;
+  margin: 30px 30px 0px 0px;
+  color: #fff;
+  font-family: 'Fascinate', cursive;
 }
 
 .navbar li{
@@ -26,6 +37,7 @@ header img{
  position: absolute;
  top: 21.5%;
 }
+
 .navbar li a{
     color: #fff;
     text-decoration:none;
@@ -43,6 +55,9 @@ header img{
   padding: 3px; 
   font-size: 2.5rem;
 }
+
+
+
  .body h2::before{
   content: "";
   display: inline-block;
@@ -64,7 +79,7 @@ header img{
 
   
  .body span{
-  color:rgba(134, 7, 7, 0.829);
+   color:rgba(134, 7, 7, 0.829);
     font-size:3rem;
 }
 .footer-section p{
@@ -114,10 +129,14 @@ header img{
   cursor: pointer;
 }
 
-.remover:hover,.cancel:hover,.skillsremover:hover,.contact-remover:hover,.resumeremover:hover{
+.remover:hover,.cancel:hover,.skillsremover:hover,.contact-remover:hover,.resume-remover:hover{
   color: #999;
 }
 
+.technical-background p{
+    line-height: 1.8em;
+    letter-spacing: 1px;
+}
 .technical-background p::before{
    content: open-quote;
    font-size: 2rem;
@@ -155,6 +174,9 @@ header img{
   color: rgb(190, 183, 183);
 }
 
+ .profile-footer .btn-download{
+   display: none;
+ }
 .profile-footer button:hover{
   transform: scale(1.1);
 
@@ -171,7 +193,6 @@ header img{
 .projects-image img{
   width: 80%;
   transition: 0.7s;
-  object-fit:cover;
   border: 2px solid rgba(134, 7, 7, 0.829); 
   border-radius: 10px;
   position: relative;
@@ -181,6 +202,7 @@ header img{
 .overlay:hover{
   opacity: 1;
 }
+
 
 .overlay > *{
   transform: translateY(40px);
@@ -198,6 +220,79 @@ header img{
   background-color: aliceblue;
 }
 
+
+.contact-form p{
+  color:#fff;
+  text-transform: capitalize;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.contact-form > div{
+  padding: 10px;
+ 
+}
+.contact-form input{
+  width: 85%;
+  padding: 8px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  background-color: rgb(15, 15, 14);
+  font-family:'Montserrat', sans-serif;
+  color: #fff;
+}
+
+
+.contact-form textarea{
+  max-width: 300px;
+  min-width: 250px;
+  max-height: 200px;
+  min-height: 150px;
+  background-color:rgb(17, 16, 15) ;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  font-family:'Montserrat', sans-serif;
+  color: #fff;
+}
+  
+
+.contact-images .contact-icon{
+  position: absolute;
+  right: 1%;
+  transition: 0.5s;
+}
+
+.contact-images .contact-icon:hover{
+  transform: scale(1.2);
+}
+
+input::placeholder{
+  text-transform: capitalize;
+  color: rgb(177, 170, 170);
+}
+
+.icon-nav-icon, .icon-numbers{
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 1em;
+  color: rgba(134, 7, 7, 0.829);
+  font-weight: 600;
+}
+
+.icon-nav img{
+  width: 25px;
+}
+
+.icon-numbers a{
+  text-decoration: none;
+  color: rgba(134, 7, 7, 0.829);
+}
 @keyframes arrow{
 
   20%{
@@ -230,15 +325,15 @@ header img{
   }
 }
 
+
+
 .resumeremover{
   width: 100%;
   height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content:flex-end;
+  position: absolute;
   padding-right: 15px;
   position: sticky;
-  top: 0px;
+  top: 30px;
 }
 
 .resumeremover > div{
