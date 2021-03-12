@@ -37,6 +37,11 @@ header{
     
 }
 
+.hamburger{
+    display: none;
+}
+
+
 .body{
     width: 80%;
     height: 30%;
@@ -51,21 +56,22 @@ header{
  
 }
 
+
 .footer-section,.profile-footer{
    width: 90%;
    margin: 10px auto;
-   height: 180px;
+   height: 150px;
    color: #fff;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: relative;
-
+     margin-top: 3rem;
 }
 
 .popup-profile,.popup-projects,.popup-skills,.popup-contact{
     width: 95%;
-    height: 85vh;
+    height: 90%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -88,6 +94,7 @@ header{
 .popup-active{
   margin-top: -140px;
 }
+
 
 
 .skills-content{
@@ -115,12 +122,10 @@ header{
     width: 90%;
     height: 60%;
     color: #fff;
-    margin: 10px auto;
-    text-align: center;
-    align-items: center;
+    margin: 5px auto;
     display: flex;
+    align-items: center; 
     flex-direction: column;
-    line-height: 1.5;
     
   }
 
@@ -131,7 +136,7 @@ header{
       justify-content: center;
       align-items: center;
       text-align: center;
-    
+      
   }
  
   .overlayimg {
@@ -154,12 +159,12 @@ header{
       display: flex;
       justify-content: center;
       align-items:center;
-     
   }
 
-  .btn-view{
-      width: 140px;
-      height: 45px;
+  .btn-view,.btn-code{
+      margin-left: 15px;
+      width: 120px;
+      height: 40px;
       border-radius: 10px;
       text-transform: capitalize;
       background:rgba(134, 7, 7, 0.829);
@@ -168,16 +173,17 @@ header{
       outline: none;
       font-weight: 600;
       font-family: 'Montserrat', sans-serif;
-      padding :5px;
       position: relative;
       cursor: pointer;
-     
+      font-size: 0.5em;
+      z-index: 10;
   }
 
 
   .contact-form{
      text-align: center;
      background:rgba(134, 7, 7, 0.829);
+     height: 100%;
    }
 
   .contact-content{

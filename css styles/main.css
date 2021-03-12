@@ -3,12 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
 
-header img{
-    width: 150px;
-    height: 150px;
-    margin: 30px 30px 0px 0px;
-    
-}
 
 header h1{
   font-size: 2.2em;
@@ -18,12 +12,23 @@ header h1{
   font-family: 'Fascinate', cursive;
 }
 
+header span{
+  color:rgba(134, 7, 7, 0.829); ;
+}
+
 .navbar li{
     list-style: none;
     text-transform: capitalize;
     padding: 10px;
     
 }
+
+.hamburger img{
+  width: 30px;
+  height: 30px;
+
+}
+
 .navbar li:nth-child(1) a {
   color:rgba(134, 7, 7, 0.829);
 }
@@ -106,6 +111,7 @@ header h1{
   color:rgba(134, 7, 7, 0.829);
   cursor: pointer;
 }
+
 .social-links img{
   padding:5px;
   width: 30px;
@@ -134,8 +140,11 @@ header h1{
 }
 
 .technical-background p{
-    line-height: 1.8em;
+    margin-top: -20px;
+    line-height: 1.5em;
     letter-spacing: 1px;
+    font-size: 1em;
+    text-align: center;
 }
 .technical-background p::before{
    content: open-quote;
@@ -160,6 +169,10 @@ header h1{
 
 .prfooter{
   padding-bottom: 100px;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%,-5%);
 }
 .profile-footer button{
   outline: none;
@@ -174,9 +187,12 @@ header h1{
   color: rgb(190, 183, 183);
 }
 
+
  .profile-footer .btn-download{
    display: none;
  }
+
+
 .profile-footer button:hover{
   transform: scale(1.1);
 
@@ -263,7 +279,7 @@ header h1{
 .contact-images .contact-icon{
   position: absolute;
   right: 1%;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .contact-images .contact-icon:hover{

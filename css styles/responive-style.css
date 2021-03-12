@@ -1,0 +1,53 @@
+
+
+@media (max-width: 866px){
+    .navbar{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    header{
+        padding-top: 30px;
+    }
+
+    .prfooter .btn-download{
+        display: block;
+    }
+
+    .prfooter .btn-resume-view{
+        display: none;
+    }
+
+    .overlay button{
+        width: 30%;
+        height: 18%;
+        font-size: 0.4em;
+    }
+
+    .overlay{
+        background: none;
+    }
+
+    .skills-content{
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    .skills-content h3{
+        font-size: 0.9em;
+    }
+
+    .icon-nav{
+        font-size: 0.7em;
+        width: 25%;
+    }
+
+    .profile-footer button{
+        padding: 8px;
+        font-size: 0.8em;
+    }
+    
+}
