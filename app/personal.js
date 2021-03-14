@@ -20,6 +20,9 @@ const resumeremover = document.querySelector('.resume-remover');
 const contacticon = document.querySelector('.contact-icon') 
 const iconnav = document.querySelector('.icon-nav')  
 
+const hamburger = document.querySelector('.hamburger');
+const hamburgernav = document.querySelector('.responisve-navbar');
+
 
 
 
@@ -97,4 +100,11 @@ contacticon.addEventListener('click', function(){
 
   iconnav.classList.toggle('icon-nav-active');
     
+});
+
+
+hamburger.addEventListener('click',function(){
+
+  hamburgernav.classList.toggle('responisve-navbar-active');
+  
 });

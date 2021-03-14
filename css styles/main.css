@@ -13,7 +13,7 @@ header h1{
 }
 
 header span{
-  color:rgba(134, 7, 7, 0.829); ;
+  color:rgba(134, 7, 7, 0.829); 
 }
 
 .navbar li{
@@ -27,6 +27,23 @@ header span{
   width: 30px;
   height: 30px;
 
+}
+
+.responisve-navbar li{
+  text-transform: capitalize;
+  list-style: none;
+  padding: 55px;
+}
+
+.responisve-navbar a{
+  color: rgba(134, 7, 7, 0.829);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.responisve-navbar a:hover{
+   color: #fff;
 }
 
 .navbar li:nth-child(1) a {
@@ -87,6 +104,7 @@ header span{
    color:rgba(134, 7, 7, 0.829);
     font-size:3rem;
 }
+
 .footer-section p{
   font-size: 0.9rem;
   font-weight: 700;
@@ -100,17 +118,6 @@ header span{
    animation: arrow 2s infinite;
 }
 
-.arrow::after{
-  content: "Profile";
-  display: block;
-  position: absolute;
-  bottom: 5%;
-  left: 49%;
-  transform: translate(-50%, -50%);
-  font-weight: bold;
-  color:rgba(134, 7, 7, 0.829);
-  cursor: pointer;
-}
 
 .social-links img{
   padding:5px;
@@ -167,14 +174,10 @@ header span{
    margin-top: 50px;
 }
 
-.prfooter{
-  padding-bottom: 100px;
-  position: absolute;
-  right: 50%;
-  left: 50%;
-  transform: translate(-50%,-5%);
-}
-.profile-footer button{
+
+
+
+.profile-footer button,.prfooter button{
   outline: none;
   border: none;
   padding: 10px;
@@ -185,15 +188,20 @@ header span{
   transition: 0.2s;
   cursor: pointer;
   color: rgb(190, 183, 183);
+  
 }
 
+.profile-footer button a,.prfooter button a{
+  text-decoration: none;
+  color: rgb(190, 183, 183);
+}
 
- .profile-footer .btn-download{
+ .prfooter .btn-download{
    display: none;
  }
 
 
-.profile-footer button:hover{
+.profile-footer button:hover,.prfooter button:hover{
   transform: scale(1.1);
 
 }
@@ -263,16 +271,16 @@ header span{
 
 
 .contact-form textarea{
-  max-width: 300px;
-  min-width: 250px;
-  max-height: 200px;
-  min-height: 150px;
+  width: 100%;
+  max-height: 20%;
   background-color:rgb(17, 16, 15) ;
   border-radius: 7px;
   outline: none;
   border: none;
   font-family:'Montserrat', sans-serif;
   color: #fff;
+  position: relative;
+  padding: 10px;
 }
   
 
@@ -309,6 +317,250 @@ input::placeholder{
   text-decoration: none;
   color: rgba(134, 7, 7, 0.829);
 }
+
+
+
+
+
+/* ************ resume styles ************ */
+
+
+.headresume{
+  grid-area: head;
+  background-color: rgb(92, 20, 17);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Shippori Mincho', serif;
+}
+
+.headresume .perso-info{
+   font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 0.7em;
+  line-height: 2em;
+  font-weight: 500;
+}
+
+.headresume h1{   
+   letter-spacing: 1.5px;
+   margin-left: 50px;
+  
+}
+
+
+.headresume h2{
+   font-size: 1.3em;
+   margin-left: 50px;
+   
+}
+.contactsresume {
+ grid-area: contacts;
+ background-color: rgb(92, 20, 17);
+ font-size: 0.7em;
+
+}
+
+.contactsresume-holder{
+   width: 67%;
+   height: 90%;
+   display: flex;
+   justify-content: space-around;
+   margin: 8px auto;
+}
+.contactsresume .icons{
+   display: flex; 
+   flex-direction: column; 
+   justify-content: space-around; 
+}
+
+.contactsresume .icons img{
+   width: 20px;
+}
+
+.contactsresume .textresume{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   font-weight: 500;
+  
+}
+
+.contactsresume .textresume a{
+   text-decoration: none;
+   color: #fff;
+}
+
+.resume-remover{
+   font-size: 3em;
+   position: sticky;
+   top:50px ;
+   transform: translate(80% , 50%);
+   cursor: pointer;
+}
+
+
+
+.profileresume{ 
+   grid-area: profile;
+   font-size: 0.9em;
+}
+
+.profileresume .profileresume-wraper {
+   width: 90%;
+   height: 50%;   
+   margin: 10% auto;
+   font-size: 1.1em;
+}
+
+.profileresume-wraper h1{
+   color:rgba(134, 7, 7, 0.829);
+   margin-bottom: 20px;
+}
+
+
+.skillsresume{
+   grid-area: skills;
+   font-size: 0.8em;
+   line-height: 1.2em;
+   position: relative;
+}
+
+.skillsresume h1 {
+  margin-top: 1.9em;
+  margin-bottom: 50px;
+  color:rgba(134, 7, 7, 0.829);
+  font-size: 2.9em;
+}
+
+.skillsresume h2{
+   margin-top: 35px;
+   margin-bottom: 15px;
+   text-transform: capitalize;
+   color: rgb(156, 79, 76);
+   font-size: 1.9em;
+}
+
+.skillsresume p{
+   text-transform: capitalize;
+   font-size: 1.1em;
+   line-height: 1.9em;
+}
+
+.skillsresume .comp-skills{
+   background-color: aqua;
+   margin-bottom: 30px;
+}
+
+.workresume{
+   grid-area: work;
+   font-size: 0.9em;
+   display: flex;
+   
+}
+
+.contentresume h1{
+   color:rgba(134, 7, 7, 0.829);
+   font-size: 2.3em;
+   text-transform: uppercase;
+   margin-bottom: 30px;
+}
+
+.workresume .contentresume{
+   height: 70%;
+   width: 45%;
+   margin-top: 10px;
+}
+
+.contentresume > div {
+  margin: 50px 0px 120px 30px;
+  
+}
+
+.workresume .synopsisresume{
+   width: 50%;
+   height: 70%;
+   margin-top: 100px;
+   display: flex;
+   justify-content: space-around;
+   flex-direction: column;
+  
+}
+
+
+.synopsisresume p::before{
+   content: "";
+   display: inline-block;
+   width: 3px;
+   height: 15%;
+   background-color: rgb(116, 24, 24);
+   position: absolute;
+   left: 29%;
+}
+
+.educationresume{
+   grid-area: education;
+   font-size: 0.9em;
+}
+
+.educationresume .educationresume-holder{
+   display: flex;
+   justify-content: space-around;
+   text-transform: capitalize;
+  
+}
+
+
+.educationresume  h1{
+   text-align: center;
+   text-transform: uppercase;
+   color: rgb(153, 21, 16);
+   margin-bottom: 35px;
+}
+
+.resumeremover{
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  padding-right: 15px;
+  position: sticky;
+  top: 30px;
+}
+
+.resumeremover > div{
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 400;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.resumeremover > div:hover{
+  color: gray;
+}
+
+.resume-active{
+  transform: translate(-50%,-50%);
+  
+}
+
+.resume-holder::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgb(36, 17, 17);
+    
+}
+
+.resume-holder::-webkit-scrollbar-thumb{
+    background-color: rgba(134, 7, 7, 0.829);
+    border-radius: 10px;
+}
+
+.resume-holder::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(167, 157, 161);
+}
+
+
+/* ************ arrow animation ************ */
 @keyframes arrow{
 
   20%{
@@ -339,27 +591,4 @@ input::placeholder{
     transform: scale(1);
     transform: translateY(0px);
   }
-}
-
-
-
-.resumeremover{
-  width: 100%;
-  height: 30px;
-  position: absolute;
-  padding-right: 15px;
-  position: sticky;
-  top: 30px;
-}
-
-.resumeremover > div{
-  color: #fff;
-  font-size: 2.5em;
-  font-weight: 400;
-  transform: rotate(45deg);
-  cursor: pointer;
-}
-
-.resumeremover > div:hover{
-  color: gray;
 }

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,12 +8,16 @@
     <link rel="stylesheet" href="css styles/main.css">
     <link rel="stylesheet" href="css styles/responive-style.css">
     
-    <title>Document</title>
+    <title>my portfolio</title>
 </head>
+
+
 <body>
 
 
     <div class="container">
+
+
   <header>
         <h1><span>N</span>hoel<span>.</span></h1>
            
@@ -28,6 +33,16 @@
         <div class="hamburger">
             <img src="web-pictures/icons8-menu-40.png" alt="hamburger menu">
         </div>
+          
+        <ul class="responisve-navbar">
+
+            <li class="profilenav"><a href="#">profile</a></li>
+            <li class="projectnav"><a href="#">projects</a></li>
+            <li class="skillnav"><a href="#">skills</a></li>
+            <li class="contactnav"><a href="#">contact</a></li>
+
+        </ul>
+
     </header>
 
 
@@ -37,14 +52,14 @@
        
     </div>
 
-    <div class="footer-section">
+    <div class="footer-section profile-footer">
 
         <p>&copy Nhoel Revilla</p>
 
         <div class="arrow">
             <img src="web-pictures/icons8-up-arrow-35.png" alt="arrow">
-           
         </div>
+          
 
         <div class="social-links">
            <a href="https://www.facebook.com/Maybeitsme.nhoel/"> <img src="web-pictures/icons8-facebook-24.png" alt="facebook icon"></a>
@@ -52,8 +67,11 @@
            <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1"><img src="web-pictures/icons8-gmail-login-24.png" alt="gmail icon"></a>
            <a href="https://www.linkedin.com/feed/"><img src="web-pictures/icons8-linkedin-24.png" alt="linkedin icon"></a>
         </div>
+     
               
        </div>
+
+
 
        
        <div class="popup-profile">
@@ -61,6 +79,8 @@
         
           <p class="main-title"> profile</p>
         <div class="remover">+</div>
+
+
         <div class="content">
 
        <div class="profile-image-holder">
@@ -92,12 +112,12 @@
         </div>
 
 
-        <div class="profile-footer prfooter">
+        <div class="prfooter">
 
          <button class="btn-resume-view" type="button" onclick="resume()">view my resume</button>
-         <button class="btn-download">download resume</button>
+         <button class="btn-download"><a href=""> download resume</a></button>
 
-         <div class="projects-arrow ">
+         <div class="projects-arrow arrow ">
              <img src="web-pictures/icons8-up-arrow-35.png" alt="">
          </div>
               
@@ -113,6 +133,9 @@
     </div>    
  
    
+
+
+
     <div class="popup-projects">
         <div class="cancel ">+</div>
 
@@ -124,7 +147,7 @@
 
      <div class = "overlayimg">
 
-        <img  src="web-pictures/project1.png" alt="web project">
+        <a href="#"><img  src="web-pictures/project1.png" alt="web project"></a>
         
         <div class="overlay">
 
@@ -137,7 +160,7 @@
 
      <div class = "overlayimg">
 
-        <img  src="web-pictures/project2.png" alt="web project">
+        <a href="#"><img  src="web-pictures/project2.png" alt="web project"></a>
         
         <div class="overlay">
 
@@ -149,7 +172,7 @@
 
      <div class = "overlayimg">
 
-        <img  src="web-pictures/project3 (2).png" alt="web project">
+        <a href="#"><img  src="web-pictures/project3 (2).png" alt="web project"></a>
         <div class="overlay">
 
            <button class="btn-view">view website</button>
@@ -161,11 +184,11 @@
     </div>
     
     
-    <div class="profile-footer prfooter">
+    <div class="prfooter">
 
        <a href="https://github.com/code-mayonaice?tab=repositories"><button type="button">view other projects</button></a>
 
-        <div class="skills-arrow">
+        <div class="skills-arrow arrow">
             <img src="web-pictures/icons8-up-arrow-35.png" alt="">
         </div>
        
@@ -176,18 +199,25 @@
             <a href="https://www.linkedin.com/feed/"><img src="web-pictures/icons8-linkedin-24.png" alt="linkedin icon"></a>
         </div>
 
-        <h3 class="bottom-title">skills</h3>
+        <h3 class="bottom-title rightpos">skills</h3>
 
     </div>
+
     </div>
     
     </div>
+
+
+
+
 
         <div class="popup-skills">
 
             <p class="main-title">skills</p>
  
        <div class="skillsremover">+</div>
+
+
 
        <div class="skills-content">
 
@@ -240,10 +270,12 @@
        </div>
 
 
-       <div class="profile-footer prfooter">
-    
+
+
+       <div class=" prfooter">
+
         <button type="button">view my resume</button>
-        <div class="contact-arrow ">
+        <div class="contact-arrow  arrow">
             <img src="web-pictures/icons8-up-arrow-35.png" alt="">
         </div>
              
@@ -253,11 +285,13 @@
             <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1"><img src="web-pictures/icons8-gmail-login-24.png" alt="gmail icon"></a>
             <a href="https://www.linkedin.com/feed/"><img src="web-pictures/icons8-linkedin-24.png" alt="linkedin icon"></a>
         </div>
-       <h3 class="bottom-title">contact</h3>
+       <h3 class="bottom-title ">contact</h3>
    </div>
            
         </div>
        
+
+
 
         <div class="popup-contact">
 
@@ -289,7 +323,7 @@
                   <div>
 
                 <p>tell me about your website</p>
-             <textarea name="review" cols="45" rows="10"></textarea>
+             <textarea placeholder="Tell me about your website"></textarea>
 
                    </div>
              
@@ -326,16 +360,13 @@
 
                    </div>
 
-             
-
-
-
             </div>
-            <div class="profile-footer prfooter">
+
+            <div class="prfooter">
 
              <button type="button">submit information</button>
 
-             <div class="home-arrow ">
+             <div class="home-arrow arrow">
                  <img src="web-pictures/icons8-down-arrow-35.png" alt="">
              </div>
                   
@@ -347,22 +378,33 @@
                 <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1"><img src="web-pictures/icons8-gmail-login-24.png" alt="gmail icon"></a>
                 <a href="https://www.linkedin.com/feed/"><img src="web-pictures/icons8-linkedin-24.png" alt="linkedin icon"></a>
             </div>
-            <h3 class="bottom-title">home</h3>
+            <h3 class="bottom-title rightpos">home</h3>
         </div>
                  
              </div>
      
-            
+          
+             
+
+
+
 
     <div class="resume-holder">
         
     
-
-
         <div class="headresume">
       
+            <div>
             <h1>Nhoel Revilla</h1>
             <h2>Web Developer</h2>
+            </div>
+
+            <div class="perso-info">
+            <p>Age: 22</p>
+            <p>Gender: Male </p>
+            <p>Nationality: Filipino</p>
+            <p>Civil Status: Single</p> 
+           </div>
              
           </div>
       
@@ -398,7 +440,7 @@
             <p>
                 Exceptionally creative and dependable Entry Level Web Developer
                  with a superb work ethic. 
-                 Broadly and deeply knowledgeable in a wide variety of
+                 Broadly and deeply knowledgeable in a variety of
                   computer languages as well as the principles and techniques 
                   of website construction and maintenance. Highly adept at conveying 
                   complex technical information to a variety of professional and lay
@@ -512,34 +554,13 @@
             </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
       
             
             </div>
       
 
-    </div>
- 
-    </div>
+    
     <script src="app/personal.js"></script>
 </body>
 </html>

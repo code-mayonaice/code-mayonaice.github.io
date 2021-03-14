@@ -11,11 +11,11 @@
 body,html{
   scroll-behavior: smooth;
   font-size: 100%;
-  overflow: hidden;
+  overflow:hidden ;
 }
 .container{
     width: 100%;
-    height: 100vh;
+    height:100vh;
     background-image: url(css-pic/darkimg.jpg);
     font-family: 'Montserrat', sans-serif;
     position: relative;
@@ -27,7 +27,7 @@ header{
     margin:  auto;
     display: flex;
     justify-content: space-between;
- 
+    
 }
 
 .navbar{
@@ -46,27 +46,47 @@ header{
     width: 80%;
     height: 30%;
     margin: 10px auto;
-    margin-bottom: 80px;
     display: flex;
     flex-direction:column;
     justify-content: center;
     color: #fff;
     text-transform: capitalize;
     position: relative;
- 
+   
 }
 
 
-.footer-section,.profile-footer{
+.responisve-navbar{
+    background-image: linear-gradient(40deg, rgb(20, 12, 12),rgb(24, 22, 22));
+    width: 50%;
+    height: 70%;
+    display: none;
+    top: 13%;
+    right: -50%;
+    position: absolute;
+    z-index: 5;
+    text-align: center;
+    transition: 1s;
+    border-radius: 10px;
+    border: 2px solid rgba(134, 7, 7, 0.829);
+}
+
+.responisve-navbar-active{
+    right: 0px;
+}
+
+
+.footer-section{
    width: 90%;
    margin: 10px auto;
-   height: 150px;
+   height: 10%;
    color: #fff;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: relative;
-     margin-top: 3rem;
+    margin-top: 8em;
+    
 }
 
 .popup-profile,.popup-projects,.popup-skills,.popup-contact{
@@ -78,21 +98,38 @@ header{
     transform: translate(-50%, -30%);
     margin-top: 850px;
     background-image: linear-gradient(40deg, rgb(20, 12, 12),rgb(24, 22, 22));
-    border: 1px solid rgba(134, 7, 7, 0.829);
+    border: 2px solid rgba(134, 7, 7, 0.829);
     transition: 1s;
     color: #fff;
-    
+    z-index: 5;
+
 }
 
+.prfooter{
+     width: 90%;
+     margin: 10px auto;
+     height: 150px;
+     color: #fff;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     position: relative;
+  }
 
 .bottom-title{
     position: absolute;
-    bottom: 35%;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     color: rgba(134, 7, 7, 0.829);
+    text-transform: capitalize;
+    
   }
   
+
 .popup-active{
   margin-top: -140px;
+  
 }
 
 
@@ -100,7 +137,7 @@ header{
 .skills-content{
     display: flex;
     width: 93%;
-    height: 370px;
+    height: 50%;
     margin-top: 90px;
     justify-content: space-evenly;
     line-height: 2;
@@ -108,7 +145,7 @@ header{
     text-transform: capitalize;
     text-align: center;
     font-weight: 600;
-  
+    
 }
 
 .skills-content li{
@@ -116,6 +153,13 @@ header{
 }
 .skillstitle{
     color: rgba(134, 7, 7, 0.829);
+}
+
+.projects-body{
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .content{ 
@@ -136,7 +180,7 @@ header{
       justify-content: center;
       align-items: center;
       text-align: center;
-      
+     
   }
  
   .overlayimg {
@@ -150,8 +194,8 @@ header{
   .overlay{
       position: absolute;
       top: 0;
-      left: 0;
-      width: 100%;
+      left: 5%;
+      width: 90%;
       height: 100%;
       background:rgba(22, 15, 15, 0.493);
       opacity: 0;
@@ -180,19 +224,22 @@ header{
   }
 
 
+  .contact-content{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+   
+}
   .contact-form{
      text-align: center;
      background:rgba(134, 7, 7, 0.829);
      height: 100%;
+     width: 30%;
+
    }
 
-  .contact-content{
-      width: 100%;
-      height: 65%;
-      display: flex;
-      justify-content: center;
-     
-  }
+
 
 
 .icon-nav{
@@ -202,8 +249,9 @@ header{
     justify-content: space-between;
     position: absolute;
     top: 21%;
-    right: 2%;
+    right: 4%;
     opacity: 0;
+    
 }
 
 .icon-nav-active{
@@ -216,7 +264,7 @@ header{
      position: absolute;
      top: 50%;
      left: 50%;
-     width: 80%;
+     width: 75%;
      height: 800px;
      overflow: hidden;
      overflow-Y: scroll;
@@ -225,6 +273,8 @@ header{
      border: 1px solid rgba(134, 7, 7, 0.829);
      color: #fff;
      display: grid;
+     z-index: 10;
+     transition: 1s;
      grid-template-columns: 70% 30%;
      grid-template-rows: 120px 230px 220px 80px  270px 180px ;
      grid-template-areas: 'head contacts'
@@ -236,212 +286,10 @@ header{
      
   }
 
-  .resume-active{
-    transform: translate(-50%,-50%);
-    
-  }
-
-  .resume-holder::-webkit-scrollbar{
-      width: 10px;
-      background-color: rgb(36, 17, 17);
-      
-  }
-
-  .resume-holder::-webkit-scrollbar-thumb{
-      background-color: rgba(134, 7, 7, 0.829);
-      border-radius: 10px;
-  }
-
-  .resume-holder::-webkit-scrollbar-thumb:hover{
-      background-color: rgb(167, 157, 161);
-  }
-  
 
   
 
 
-  
 
-
-  /* ********************** resume styles *********************** */
  
 
-
-.headresume{
-   grid-area: head;
-   background-color: rgb(92, 20, 17);
-   font-family: 'Shippori Mincho', serif;
-}
-
-.headresume h1{   
-    letter-spacing: 1.5px;
-    margin-left: 50px;
-    margin-top: 5px;
-}
-
-
-.headresume h2{
-    font-size: 1.3em;
-    margin-left: 50px;
-}
-.contactsresume {
-  grid-area: contacts;
-  background-color: rgb(92, 20, 17);
-  font-size: 0.7em;
- 
-}
-
-.contactsresume-holder{
-    width: 67%;
-    height: 90%;
-    display: flex;
-    justify-content: space-around;
-    margin: 8px auto;
-}
-.contactsresume .icons{
-    display: flex; 
-    flex-direction: column; 
-    justify-content: space-around; 
-}
-
-.contactsresume .icons img{
-    width: 20px;
-}
- 
-.contactsresume .textresume{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.contactsresume .textresume a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.resume-remover{
-    font-size: 3em;
-    position: sticky;
-    top:50px ;
-    transform: translate(80% , 50%);
-    cursor: pointer;
-}
-
-
-
-.profileresume{ 
-    grid-area: profile;
-    font-size: 0.9em;
-}
-
-.profileresume .profileresume-wraper {
-    width: 90%;
-    height: 50%;   
-    margin: 10% auto;
-    font-size: 1.1em;
-}
-
-.profileresume-wraper h1{
-    color:rgba(134, 7, 7, 0.829);
-    margin-bottom: 20px;
-}
-
-
-.skillsresume{
-    grid-area: skills;
-    font-size: 0.8em;
-    line-height: 1.2em;
-    position: relative;
-}
-
-.skillsresume h1 {
-   margin-top: 1.9em;
-   margin-bottom: 50px;
-   color:rgba(134, 7, 7, 0.829);
-   font-size: 2.9em;
-}
-
-.skillsresume h2{
-    margin-top: 35px;
-    margin-bottom: 15px;
-    text-transform: capitalize;
-    color: rgb(156, 79, 76);
-    font-size: 1.9em;
-}
-
-.skillsresume p{
-    text-transform: capitalize;
-    font-size: 1.1em;
-    line-height: 1.9em;
-}
-
-.skillsresume .comp-skills{
-    background-color: aqua;
-    margin-bottom: 30px;
-}
-
-.workresume{
-    grid-area: work;
-    font-size: 0.9em;
-    display: flex;
-    
-}
-
-.contentresume h1{
-    color:rgba(134, 7, 7, 0.829);
-    font-size: 2.3em;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-}
- 
-.workresume .contentresume{
-    height: 70%;
-    width: 45%;
-    margin-top: 10px;
-}
-
-.contentresume > div {
-   margin: 50px 0px 120px 30px;
-   
-}
-
-.workresume .synopsisresume{
-    width: 50%;
-    height: 70%;
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-   
-}
-
-
-.synopsisresume p::before{
-    content: "";
-    display: inline-block;
-    width: 3px;
-    height: 15%;
-    background-color: rgb(116, 24, 24);
-    position: absolute;
-    left: 29%;
-}
-
-.educationresume{
-    grid-area: education;
-    font-size: 0.9em;
-}
-
-.educationresume .educationresume-holder{
-    display: flex;
-    justify-content: space-around;
-    text-transform: capitalize;
-   
-}
-
-
-.educationresume  h1{
-    text-align: center;
-    text-transform: uppercase;
-    color: rgb(153, 21, 16);
-    margin-bottom: 35px;
-}
