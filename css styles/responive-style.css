@@ -116,8 +116,54 @@
           color:#fff;
       }
 
+
+
      
 }
+
+
+@media(max-width:450px){
+  
+    .technical-background p{
+        font-size: 0.7em;
+        font-weight: 500;
+        color: rgb(197, 196, 196);
+    }
+    
+    .skills-content{
+        font-size: 1.3em;
+        width: 95%;
+        margin: 2em auto;
+        background-color: aqua;
+        line-height: 2rem;
+        padding: 5px;
+    }
+
+    .skills-content h3{
+        line-height: 1.3rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .contact-form{
+        width: 60%;
+    }
+
+    .icon-nav{
+        width: 40%;
+        font-weight: 400;
+        font-size: 0.8rem;
+        
+    }
+
+    .icon-numbers,.icon-numbers a{
+        color: rgb(100, 89, 98);
+    }
+
+}
+
+ 
+
+
 
 
 
@@ -251,11 +297,59 @@
       .body{
           margin-top: 10rem;
       }
+
+      .main-title{
+          font-size: 3.5rem;
+      }
       .footer-section{
          position: absolute;
-         top: 70%;
+         top: 75%;
          left:50% ;
          transform: translate(-50%,-50%);
       }
 
+      .remover,
+      .cancel,
+      .skillsremover,
+      .contact-remover{
+          
+        font-size: 4.5rem;
+            
+      }
+
+      .technical-background p{
+        font-size: 1.8em;
+        line-height: 2.5rem;
+        color: rgb(179, 178, 177);
+        
+    }
+
+      .prfooter{
+          margin-top: 3rem;
+      }
+
+     
+     
+    .skills-content{
+        height: 55%;
+       
+     }
+  
+     .profile-footer button,.prfooter button{
+        font-size: 1.5rem;
+        padding: 12px;
+    }
+
+    .bottom-title{
+        font-size: 1.8rem;
+        top: 100%; 
+        right: 46%;
+    }
+
+    .rightpos{
+        right: 70%;
+    }
+
+ 
+   
 }

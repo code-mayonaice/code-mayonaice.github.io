@@ -68,7 +68,7 @@ header{
     text-align: center;
     transition: 1s;
     border-radius: 10px;
-    border: 2px solid rgba(134, 7, 7, 0.829);
+    border: 2.5px solid rgba(134, 7, 7, 0.829);
 }
 
 .responisve-navbar-active{
