@@ -21,7 +21,7 @@ const contacticon = document.querySelector('.contact-icon')
 const iconnav = document.querySelector('.icon-nav')  
 
 const hamburger = document.querySelector('.hamburger');
-const hamburgernav = document.querySelector('.responisve-navbar');
+const hamburgernav = document.querySelector('.responsive-navbar-container');
 
 
 

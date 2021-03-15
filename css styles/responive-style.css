@@ -7,12 +7,14 @@
 
     .hamburger{
         display: block;
-        margin-top: 2.5em;
+        margin-top: 5%;
     }
 
-    .responisve-navbar{
+    .responsive-navbar-container{
         display: block;
     }
+
+
     header{
         padding-top: 30px;
     }
@@ -53,11 +55,16 @@
         padding: 8px;
         font-size: 0.8em;
     }
+
+    
     
 }
 
 
 @media(max-width: 550px){
+
+      
+      
       .body h1,h2{
           font-size: 2.3em;
       }
@@ -73,13 +80,21 @@
      }
       
       .technical-background p{
-          font-size: 0.9em;
+          font-size: 0.8rem;
       }
 
       .bottom-title{
           font-size: 1em;
          
       }
+
+
+      .popup-profile,.popup-projects,.popup-skills,.popup-contact{
+
+        height: 96%;
+    }
+
+
 
       .projects-image{
          flex-direction: column;
@@ -134,7 +149,6 @@
         font-size: 1.3em;
         width: 95%;
         margin: 2em auto;
-        background-color: aqua;
         line-height: 2rem;
         padding: 5px;
     }
@@ -158,6 +172,112 @@
     .icon-numbers,.icon-numbers a{
         color: rgb(100, 89, 98);
     }
+
+    
+
+}
+
+
+@media(max-width:360px){
+
+    .body{
+       
+        margin-top: -4rem;
+    }
+
+    .hamburger{
+       
+        margin-top: 10%;
+    }
+
+
+    .social-links img{
+        padding:3px;
+        width: 20px;
+      }
+
+      .profile-footer p{
+          font-size: 0.6rem;
+      }
+
+      .arrow img,
+      .profile img,
+       .projects-arrow, 
+       .skills-arrow,
+       .contact-arrow img,
+       .home-arrow img{
+           
+        width: 25px;
+        
+      }
+      
+      .responsive-navbar-container{
+        top: 15%;
+    }
+
+    .profile-footer{
+        margin-top: 3.8em;
+    }
+
+    .responisve-navbar li{
+        font-size: 0.8em;
+      }
+
+      .technical-background p{ 
+         margin-top: -2rem;
+      }
+       
+      .content{
+          justify-content:flex-start;
+          width: 90%;
+      }
+
+      .content .profile-img{
+        width: 50px;
+      
+     }
+
+     .prfooter{
+         position: absolute;
+         top: 85%;
+         left: 50%;
+         transform: translate(-50%,-50%);
+         
+
+     }
+
+     .prfooter .btn-download,.prfooter button{
+        padding: 4px 5px;
+        font-size: 0.5rem;
+    }
+
+
+    .bottom-title{
+        font-size: 0.7rem;
+        top: 83%;
+        left: 47%;
+    }
+
+      
+    .rightpos{
+        right: 47%;
+        
+    }
+    
+    .skills-content{
+        font-size: 1.1em;
+        width: 100%;
+        margin: 4em auto;
+        line-height: 1.7rem;
+        padding: 3px;
+        color: rgb(185, 180, 180);
+    }
+
+    .skills-content h3{
+        font-size: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+       
 
 }
 
