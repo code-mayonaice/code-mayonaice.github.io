@@ -17,9 +17,6 @@ const projectremover = document.querySelector('.cancel');
 const skillsremover = document.querySelector('.skillsremover');
 const contactremover = document.querySelector('.contact-remover');
 const resumeremover = document.querySelector('.resume-remover');
-const contacticon = document.querySelector('.contact-icon') 
-const iconnav = document.querySelector('.icon-nav')  
-
 const hamburger = document.querySelector('.hamburger');
 const hamburgernav = document.querySelector('.responsive-navbar-container');
 
@@ -96,11 +93,7 @@ function resume(){
 }
 
 
-contacticon.addEventListener('click', function(){
 
-  iconnav.classList.toggle('icon-nav-active');
-    
-});
 
 
 hamburger.addEventListener('click',function(){

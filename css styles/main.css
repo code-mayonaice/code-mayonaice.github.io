@@ -148,9 +148,9 @@ header span{
 
 .technical-background p{
     margin-top: -20px;
-    line-height: 1.5em;
+    line-height: 1.8em;
     letter-spacing: 1px;
-    font-size: 1em;
+    font-size: 1.1rem;
     text-align: center;
 }
 .technical-background p::before{
@@ -235,88 +235,6 @@ header span{
 
 .overlay:hover:hover > *{
   transform: translateY(0);
-}
-
-
-.personalinfo span{
-  width: 30px;
-  height: 3px;
-  background-color: aliceblue;
-}
-
-
-.contact-form p{
-  color:#fff;
-  text-transform: capitalize;
-  font-weight: 600;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-.contact-form > div{
-  padding: 10px;
- 
-}
-.contact-form input{
-  width: 85%;
-  padding: 8px;
-  border-radius: 7px;
-  border: none;
-  outline: none;
-  font-weight: 500;
-  background-color: rgb(15, 15, 14);
-  font-family:'Montserrat', sans-serif;
-  color: #fff;
-}
-
-
-.contact-form textarea{
-  width: 100%;
-  height: auto;
-  background-color:rgb(17, 16, 15) ;
-  border-radius: 7px;
-  outline: none;
-  border: none;
-  font-family:'Montserrat', sans-serif;
-  color: #fff;
-  position: relative;
-  padding: 10px;
-  resize: none;
-}
-  
-
-.contact-images .contact-icon{
-  position: absolute;
-  right: 1%;
-  transition: 0.3s;
-}
-
-.contact-images .contact-icon:hover{
-  transform: scale(1.2);
-}
-
-input::placeholder{
-  text-transform: capitalize;
-  color: rgb(177, 170, 170);
-}
-
-.icon-nav-icon, .icon-numbers{
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  font-size: 1em;
-  color: rgba(134, 7, 7, 0.829);
-  font-weight: 600;
-}
-
-.icon-nav img{
-  width: 25px;
-}
-
-.icon-numbers a{
-  text-decoration: none;
-  color: rgba(134, 7, 7, 0.829);
 }
 
 

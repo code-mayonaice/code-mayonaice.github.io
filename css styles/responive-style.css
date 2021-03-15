@@ -46,10 +46,6 @@
         font-size: 0.9em;
     }
 
-    .icon-nav{
-        font-size: 0.7em;
-        width: 25%;
-    }
 
     .profile-footer button{
         padding: 8px;
@@ -123,13 +119,7 @@
           display: none;
       }
      
-      .contact-form{
-          width: 50%;
-      }
-
-      .icon-numbers,.icon-numbers a{
-          color:#fff;
-      }
+    
 
 
 
@@ -158,21 +148,7 @@
         margin-bottom: 1.3rem;
     }
 
-    .contact-form{
-        width: 60%;
-    }
-
-    .icon-nav{
-        width: 40%;
-        font-weight: 400;
-        font-size: 0.8rem;
-        
-    }
-
-    .icon-numbers,.icon-numbers a{
-        color: rgb(100, 89, 98);
-    }
-
+   
     
 
 }
@@ -225,6 +201,7 @@
 
       .technical-background p{ 
          margin-top: -2rem;
+         line-height: 1rem;
       }
        
       .content{
@@ -283,18 +260,16 @@
 
 .popup-profile,.popup-projects,.popup-skills,.popup-contact{
 
+
     height: 93%;
 }
 
 .popup-active{
-    margin-top: -110px;
+    margin-top: -85px;
     
   }
 
  
-
-
-
 
 
 /* **********up************** */
@@ -303,9 +278,13 @@
 @media(min-width: 1300px){
            
     .popup-active{
-        margin-top: -170px;
+        margin-top: -26.5rem;
         
       }
+
+      .popup-profile,.popup-projects,.popup-skills,.popup-contact{
+        transform: translate(-50%,-5%);
+    }
 
       header{
           font-size: 1.4em;
@@ -376,38 +355,25 @@
        font-size: 2.5rem;
        
    }
+
+   .contact-form-container{
+       font-size: 1.2rem;
+   }
+
+   .right-form{
+    margin-top: 3.5rem;
     
-   .contact-form{
-    width: 32%;
-   }
+  }
 
-   .contact-form p{
-       font-size: 1.3rem;
-   }
+  form textarea{
+      width: 130%;
+      height: 65%;
+  }
 
-   .contact-form input{
-       width: 85%;
-       height: 3rem
-   }
 
-   input::placeholder, textarea::placeholder{
-       font-size: 1.1rem;
-   }
 
-   .icon-nav{
-       width: 25%;
-   }
-   .contact-icon{
-       width: 60px;
-   }
-
-   .icon-nav-icon img{
-       width: 40px;
-   }
-
-   .icon-numbers,.icon-numbers a{
-      font-size: 1.2rem;
-   }
+    
+  
 
 }
 
@@ -415,12 +381,12 @@
 @media(min-width: 1500px){
 
     .popup-profile,.popup-projects,.popup-skills,.popup-contact{
-
         transform: translate(-50%,-5%);
+        height: 90%;
     }
 
     .popup-active{
-        margin-top: -28rem;
+        margin-top: -30rem;
         
       }
    
@@ -480,6 +446,32 @@
         right: 70%;
     }
 
- 
+    .resume-holder{
+        height: 90%;
+    }
+    
+    
+   .contact-form-container{
+    font-size: 1.4rem;
+   }
+
    
+
+   form textarea{
+   width: 170%;
+   height: 80%;
+   }
+    
+   .contact-img-holder{
+      height: 80%;
+      justify-content: space-around;
+      margin-right: 0.4rem;
+   }
+    
+   .contact-img-holder img{
+       width: 30px;
+   }
+    
+
+ 
 }
