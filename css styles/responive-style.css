@@ -90,7 +90,6 @@
 
 
       .popup-profile,.popup-projects,.popup-skills,.popup-contact{
-
         height: 96%;
     }
 
@@ -117,8 +116,9 @@
       }
      
       .overlay{
-         display: none;
+       display: none;
       }
+
       .btn-view,.btn-code{        
           display: none;
       }
@@ -216,7 +216,7 @@
     }
 
     .profile-footer{
-        margin-top: 3.8em;
+        margin-top: 6em;
     }
 
     .responisve-navbar li{
@@ -280,6 +280,16 @@
        
 
 }
+
+.popup-profile,.popup-projects,.popup-skills,.popup-contact{
+
+    height: 93%;
+}
+
+.popup-active{
+    margin-top: -110px;
+    
+  }
 
  
 
