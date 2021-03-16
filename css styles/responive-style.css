@@ -19,6 +19,10 @@
         padding-top: 30px;
     }
 
+    .technical-background p{
+        font-size: 0.9rem;
+    }
+
     .prfooter .btn-download{
         display: block;
     }
@@ -52,8 +56,68 @@
         font-size: 0.8em;
     }
 
+    .right-form h1,.contact-content-holder h1{
+
+        font-size: 1.5rem;
+    }
+
+    .contact-content-holder p{
+        font-size: 0.8rem;
+    }
+
+    form > div{
+        padding-bottom: 0.5rem;
+    }
+
+    form span{
+        font-size: 0.8rem;
+    }
+
+    form input{
+        width: 15rem;
+        font-size: 0.8rem;
+        padding: 1px;
+    }
+
+    form textarea{
     
+        font-size: 0.8rem;
+    }
+
+   
     
+
+
+    
+}
+
+@media(max-width: 700px){
+
+    .contact-img-holder{
+        height: 80%;
+        margin-right: 0.6rem;
+     }
+
+
+     .right-form h1,.contact-content-holder h1{
+
+        font-size: 1.2rem;
+    }
+
+    form textarea{
+        width: 15rem;
+        height: 5rem;
+        font-size: 1rem;
+    }
+
+    .contact-content-holder p{
+        font-size: 0.6rem;
+    }
+
+   
+    
+
+
 }
 
 
@@ -118,9 +182,10 @@
       .btn-view,.btn-code{        
           display: none;
       }
-     
-    
 
+
+   
+    
 
 
      
@@ -148,7 +213,9 @@
         margin-bottom: 1.3rem;
     }
 
+    
    
+
     
 
 }
@@ -254,20 +321,73 @@
         font-size: 0.8rem;
         margin-bottom: 1.5rem;
     }
+
+
+    form{
+      margin-top: -0.7rem;
+    }
+
+
+
+    form span{
+        font-size: 0.6rem;
+    }
+
+    form > div{
+        line-height: 1rem;
+         padding-bottom: 2;
+         
+    }
+
+    form input{
+        width: 7rem;
+        font-size: 0.7rem;
+    }
+
+    form textarea{
+       font-size: 0.7rem;
+    }
+
+    .right-form h1,.contact-content-holder h1{
+       
+        font-size: 0.8rem;
+    }
+
+    .right-form h1{
+        top: 2rem;
+        left: 1.9rem;
+    }
+
+    form textarea{
+        width: 7.8rem;
+        height: 4rem;
+    }
+
+    .contact-content-holder p{
+        font-size: 0.5rem;
+    }
+
+
+    .contact-img-holder{
+        
+        margin-right: 0.9rem;
+     }
+
+     .contact-img-holder img{
+         width: 17px;
+     }
+
+
+     .skills-content{
+         width: 98%;
+     }
+
+
+
        
 
 }
 
-.popup-profile,.popup-projects,.popup-skills,.popup-contact{
-
-
-    height: 93%;
-}
-
-.popup-active{
-    margin-top: -85px;
-    
-  }
 
  
 
@@ -277,14 +397,7 @@
 
 @media(min-width: 1300px){
            
-    .popup-active{
-        margin-top: -26.5rem;
-        
-      }
-
-      .popup-profile,.popup-projects,.popup-skills,.popup-contact{
-        transform: translate(-50%,-5%);
-    }
+    
 
       header{
           font-size: 1.4em;
@@ -393,27 +506,18 @@
     grid-template-rows: 120px 230px 220px 80px  350px 200px ;
    
   }
+ 
+  .resume-remover{
+      font-size: 4rem;
+  }
 
-
-  
-
-    
-  
 
 }
 
 
 @media(min-width: 1500px){
 
-    .popup-profile,.popup-projects,.popup-skills,.popup-contact{
-        transform: translate(-50%,-5%);
-        height: 90%;
-    }
-
-    .popup-active{
-        margin-top: -30rem;
-        
-      }
+    
    
       .body{
           margin-top: 10rem;
@@ -505,11 +609,14 @@
 }
 
 
+
+
 @media (min-width:1700px){
     .body{
         margin-top: 12rem;
     } 
-
+   
+    
     
      header h1{
         margin-top: 5.3rem;
@@ -536,11 +643,6 @@
 
     .social-links img{
         width: 44px;
-      }
-
-      .popup-active{
-        margin-top: -32rem;
-        
       }
 
 
@@ -605,18 +707,14 @@
 
 
 @media (min-width:1800px){
+
     .navbar li:nth-child(1) a::before{
         top: 24.5%;
         width: 45%;
 
        }
 
-       .popup-active{
-        margin-top: -34rem;
-        
-      }
-
-      .headresume p ,.textresume p{
+    .headresume p ,.textresume p{
         font-size: 1.1rem;
     }
         
@@ -632,8 +730,16 @@
       font-size: 1.3rem;
    }
 
+    .experience h1{
+        margin-bottom: 6rem;
+    }
+
     .educationresume{
            margin-top: 4.2rem;
+    }
+
+    .resume-holder{
+        grid-template-rows: 135px 300px 220px 100px  350px 200px;
     }
 
          
@@ -641,17 +747,6 @@
 
 
 @media (min-width:2000px){
-
-    .popup-profile,.popup-projects,.popup-skills,.popup-contact{
-
-        transform: translate(-50%,50%); 
-    }
-
-    .popup-active{
-        margin-top: -89rem;
-        
-      }
-
 
       .skills-content{
          margin-top: 10rem;
@@ -685,11 +780,36 @@
         padding: 4px 0px;
     }
 
-    
+    .profileresume p,.skillsresume P,.workresume p,.educationresume-holder p{
+        font-size: 1.5rem;
+     }
+
+    .contentresume > div{
+        margin-top: 7rem;
+    }
+
+    .synopsisresume p{
+       
+        margin-top: 2rem;
+    }
+    .synopsisresume p::before{
+        height: 10%;
+    }
+
+    .resume-holder{
+        grid-template-rows: 135px 300px 220px 100px  350px 300px ;
+       
+      }
+
 
 }
 
+@media (min-width:2000px){
 
+    .leftpos{
+        left: 50.5%;
+       }   
+}
 
 
 
