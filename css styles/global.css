@@ -10,7 +10,7 @@
 
 body,html{
   font-size: 100%;
-   overflow: hidden;
+   
 }
 .container{
     width: 100%;
@@ -237,7 +237,6 @@ form textarea{
     outline-width:0.125rem;
     padding: 0.2rem;
     background: rgb(37, 14, 9);
-    text-transform: capitalize;
     color: rgb(212, 209, 209);
     width: 120%;
     height: 49%;
@@ -363,7 +362,7 @@ form span{
      top: 50%;
      left: 50%;
      width: 75%;
-     height: 800px;
+     height: 92%;
      overflow: hidden;
      overflow-Y: scroll;
      transform: translate(-50%, 190%);

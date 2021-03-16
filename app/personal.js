@@ -93,11 +93,12 @@ function resume(){
 }
 
 
-
-
-
 hamburger.addEventListener('click',function(){
 
   hamburgernav.classList.toggle('responisve-navbar-active');
   
 });
+
+
+
+

@@ -70,14 +70,15 @@ header span{
 .skills-content li{
   list-style: none;
 }
+
 .navbar li a:hover{
   color:rgba(134, 7, 7, 0.829);
 }
+
  .body h1,h2{
   padding: 3px; 
   font-size: 2.5rem;
 }
-
 
 
  .body h2::before{
@@ -448,8 +449,6 @@ header span{
 
 .resumeremover > div{
   color: #fff;
-  font-size: 2.5em;
-  font-weight: 400;
   transform: rotate(45deg);
   cursor: pointer;
 }
