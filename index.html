@@ -23,15 +23,15 @@
            
         <ul class="navbar">
             <li><a href="#">home</a></li>
-            <li class="profilenav"><a href="#">profile</a></li>
-            <li class="projectnav"><a href="#">projects</a></li>
-            <li class="skillnav"><a href="#">skills</a></li>
-            <li class="contactnav"><a href="#">contact</a></li>
+            <li onclick="profile()" ><a href="#">profile</a></li>
+            <li onclick="projects()" ><a href="#">projects</a></li>
+            <li onclick="skills()" ><a href="#">skills</a></li>
+            <li onclick="contact()" ><a href="#">contact</a></li>
 
         </ul>
 
         <div class="hamburger">
-            <img src="web-pictures/icons8-menu-40.png" alt="hamburger menu">
+            <img onclick="hamburger()" src="web-pictures/icons8-menu-40.png" alt="hamburger menu">
         </div>
           
 
@@ -39,10 +39,10 @@
 
         <ul class="responisve-navbar">
 
-            <li class="profilenav"><a href="#">profile</a></li>
-            <li class="projectnav"><a href="#">projects</a></li>
-            <li class="skillnav"><a href="#">skills</a></li>
-            <li class="contactnav"><a href="#">contact</a></li>
+            <li onclick="profile()" class="profilenav"><a href="#">profile</a></li>
+            <li onclick="projects()" class="projectnav"><a href="#">projects</a></li>
+            <li onclick="skills()" class="skillnav"><a href="#">skills</a></li>
+            <li onclick="contact()" class="contactnav"><a href="#">contact</a></li>
 
         </ul>
         
@@ -62,15 +62,15 @@
         <p>&copy Nhoel Revilla</p>
 
         <div class="arrow">
-            <img src="web-pictures/icons8-up-arrow-35.png" alt="arrow">
+            <img onclick="profile()" src="web-pictures/icons8-up-arrow-35.png" alt="arrow">
         </div>
           
 
         <div class="social-links">
-           <a href="https://www.facebook.com/Maybeitsme.nhoel/"> <img src="web-pictures/icons8-facebook-24.png" alt="facebook icon"></a>
-           <a href="https://github.com/code-mayonaice"><img src="web-pictures/icons8-github-24 (1).png" alt="twitter icon"></a>
-           <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1"><img src="web-pictures/icons8-gmail-login-24.png" alt="gmail icon"></a>
-           <a href="https://www.linkedin.com/feed/"><img src="web-pictures/icons8-linkedin-24.png" alt="linkedin icon"></a>
+           <a href="https://www.facebook.com/Maybeitsme.nhoel/" target="_blank"> <img src="web-pictures/icons8-facebook-24.png" alt="facebook icon"></a>
+           <a href="https://github.com/code-mayonaice" target="_blank"><img src="web-pictures/icons8-github-24 (1).png" alt="twitter icon"></a>
+           <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1" target="_blank"><img src="web-pictures/icons8-gmail-login-24.png" alt="gmail icon"></a>
+           <a href="https://www.linkedin.com/feed/" target="_blank"><img src="web-pictures/icons8-linkedin-24.png" alt="linkedin icon"></a>
         </div>
      
               
@@ -83,7 +83,7 @@
 
         
           <p class="main-title"> profile</p>
-        <div class="remover">+</div>
+        <div onclick="remove()" class="remover">+</div>
 
 
         <div class="content">
@@ -115,17 +115,17 @@
         <div class="prfooter">
 
          <button class="btn-resume-view" type="button" onclick="resume()">view my resume</button>
-         <button class="btn-download"><a href="resume/nhoelresume.pdf" download> download resume</a></button>
+         <button class="btn-download"><a href="resume/nhoelresume.pdf" target="_blank" download> download resume</a></button>
 
          <div class="projects-arrow arrow ">
-             <img src="web-pictures/icons8-up-arrow-35.png" alt="">
+             <img onclick="projects()" src="web-pictures/icons8-up-arrow-35.png" alt="">
          </div>
               
          <div class="social-links">
-            <a href="https://www.facebook.com/Maybeitsme.nhoel/"> <img src="web-pictures/icons8-facebook-24.png" alt="facebook icon"></a>
-            <a href="https://github.com/code-mayonaice"><img src="web-pictures/icons8-github-24 (1).png" alt="twitter icon"></a>
-            <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1"> <img src="web-pictures/icons8-gmail-login-24.png" alt="gmail icon"></a>
-            <a href="https://www.linkedin.com/feed/"><img src="web-pictures/icons8-linkedin-24.png" alt="linkedin icon"></a>
+            <a href="https://www.facebook.com/Maybeitsme.nhoel/" target="_blank"> <img src="web-pictures/icons8-facebook-24.png" alt="facebook icon"></a>
+            <a href="https://github.com/code-mayonaice" target="_blank"><img src="web-pictures/icons8-github-24 (1).png" alt="twitter icon"></a>
+            <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1" target="_blank"> <img src="web-pictures/icons8-gmail-login-24.png" alt="gmail icon"></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="web-pictures/icons8-linkedin-24.png" alt="linkedin icon"></a>
         </div>
 
         <h3 class="bottom-title leftpos">projects</h3>
@@ -137,7 +137,7 @@
 
 
     <div class="popup-projects">
-        <div class="cancel ">+</div>
+        <div onclick="remove()" class="remover">+</div>
 
     <p class="main-title">projects</p>
     
@@ -188,18 +188,18 @@
 
        <a href="https://github.com/code-mayonaice?tab=repositories"><button type="button">view other projects</button></a>
 
-        <div class="skills-arrow arrow">
-            <img src="web-pictures/icons8-up-arrow-35.png" alt="">
+        <div class="arrow">
+            <img onclick="skills()" src="web-pictures/icons8-up-arrow-35.png" alt="">
         </div>
        
         <div class="social-links">
-            <a href="https://www.facebook.com/Maybeitsme.nhoel/"> <img src="web-pictures/icons8-facebook-24.png" alt="facebook icon"></a>
-            <a href="https://github.com/code-mayonaice"><img src="web-pictures/icons8-github-24 (1).png" alt="twitter icon"></a>
-            <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1"> <img src="web-pictures/icons8-gmail-login-24.png" alt="gmail icon"></a>
-            <a href="https://www.linkedin.com/feed/"><img src="web-pictures/icons8-linkedin-24.png" alt="linkedin icon"></a>
+            <a href="https://www.facebook.com/Maybeitsme.nhoel/" target="_blank"> <img src="web-pictures/icons8-facebook-24.png" alt="facebook icon"></a>
+            <a href="https://github.com/code-mayonaice" target="_blank"><img src="web-pictures/icons8-github-24 (1).png" alt="twitter icon"></a>
+            <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1" target="_blank"> <img src="web-pictures/icons8-gmail-login-24.png" alt="gmail icon"></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="web-pictures/icons8-linkedin-24.png" alt="linkedin icon"></a>
         </div>
 
-        <h3 class="bottom-title rightpos">skills</h3>
+        <h3 class="bottom-title rightpos">skillss</h3>
 
     </div>
 
@@ -215,7 +215,7 @@
 
             <p class="main-title">skills</p>
  
-       <div class="skillsremover">+</div>
+       <div onclick="remove()" class="remover">+</div>
 
 
 
@@ -275,15 +275,15 @@
        <div class=" prfooter">
 
         <button type="button">view my resume</button>
-        <div class="contact-arrow  arrow">
-            <img src="web-pictures/icons8-up-arrow-35.png" alt="">
+        <div class="arrow">
+            <img onclick="contact()" src="web-pictures/icons8-up-arrow-35.png" alt="">
         </div>
              
         <div class="social-links">
-            <a href="https://www.facebook.com/Maybeitsme.nhoel/"> <img src="web-pictures/icons8-facebook-24.png" alt="facebook icon"></a>
-            <a href="https://github.com/code-mayonaice"><img src="web-pictures/icons8-github-24 (1).png" alt="twitter icon"></a>
-            <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1"><img src="web-pictures/icons8-gmail-login-24.png" alt="gmail icon"></a>
-            <a href="https://www.linkedin.com/feed/"><img src="web-pictures/icons8-linkedin-24.png" alt="linkedin icon"></a>
+            <a href="https://www.facebook.com/Maybeitsme.nhoel/" target="_blank"> <img src="web-pictures/icons8-facebook-24.png" alt="facebook icon"></a>
+            <a href="https://github.com/code-mayonaice" target="_blank"><img src="web-pictures/icons8-github-24 (1).png" alt="twitter icon"></a>
+            <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1" target="_blank"><img src="web-pictures/icons8-gmail-login-24.png" alt="gmail icon"></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="web-pictures/icons8-linkedin-24.png" alt="linkedin icon"></a>
         </div>
        <h3 class="bottom-title leftpos">contact</h3>
    </div>
@@ -297,7 +297,7 @@
 
             <p class="main-title"> contact</p>
      
-            <div class="contact-remover">+</div>
+            <div onclick="remove()" class="remover">+</div>
 
            
           
@@ -381,17 +381,17 @@
 
              <button type="button">submit information</button>
 
-             <div class="home-arrow arrow">
-                 <img src="web-pictures/icons8-down-arrow-35.png" alt="">
+             <div class="arrow">
+                 <img onclick="home()" src="web-pictures/icons8-down-arrow-35.png" alt="">
              </div>
                   
              <div class="social-links">
             
                 
-                <a href="https://www.facebook.com/Maybeitsme.nhoel/"> <img src="web-pictures/icons8-facebook-24.png" alt="facebook icon"></a>
-                <a href="https://github.com/code-mayonaice"><img src="web-pictures/icons8-github-24 (1).png" alt="twitter icon"></a>
-                <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1"><img src="web-pictures/icons8-gmail-login-24.png" alt="gmail icon"></a>
-                <a href="https://www.linkedin.com/feed/"><img src="web-pictures/icons8-linkedin-24.png" alt="linkedin icon"></a>
+                <a href="https://www.facebook.com/Maybeitsme.nhoel/" target="_blank"> <img src="web-pictures/icons8-facebook-24.png" alt="facebook icon"></a>
+                <a href="https://github.com/code-mayonaice" target="_blank"><img src="web-pictures/icons8-github-24 (1).png" alt="twitter icon"></a>
+                <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1" target="_blank"><img src="web-pictures/icons8-gmail-login-24.png" alt="gmail icon"></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank"><img src="web-pictures/icons8-linkedin-24.png" alt="linkedin icon"></a>
             </div>
             <h3 class="bottom-title rightpos">home</h3>
         </div>
@@ -439,7 +439,7 @@
           </div>
                 
           <div class="textresume">
-            <p><a href="#">RevillaNhoel@gmail.com</a></p>
+            <p><a href="#" target="_blank">RevillaNhoel@gmail.com</a></p>
             <p>09493509402</p>
             <p>Philippines</p>
           </div>
@@ -475,7 +475,7 @@
       
            
 
-            <div class="resume-remover">&times;</div>
+            <div onclick="resumeremove()" class="resume-remover">&times;</div>
 
            
                 <h1>SKILLS</h1>

@@ -8,6 +8,7 @@
     .hamburger{
         display: block;
         margin-top: 5%;
+        user-select: none;
     }
 
     .responsive-navbar-container{
@@ -51,9 +52,15 @@
     }
 
 
-    .profile-footer button{
-        padding: 8px;
-        font-size: 0.8em;
+    .prfooter button{
+        width: 7rem;
+        height: 1.9rem;
+        font-size: 0.7em;
+    }
+
+    .bottom-title{
+        font-size: 1em;
+        left: 48%;
     }
 
     .right-form h1,.contact-content-holder h1{
@@ -74,7 +81,7 @@
     }
 
     form input{
-        width: 15rem;
+        width: 13rem;
         font-size: 0.8rem;
         padding: 1px;
     }
@@ -93,6 +100,16 @@
 
 @media(max-width: 700px){
 
+    .technical-background p{
+        font-size: 0.8rem;
+    }
+
+    .prfooter button{
+        width: 6rem;
+        height: 1.7rem;
+        font-size: 0.6em;
+    }
+
     .contact-img-holder{
         height: 80%;
         margin-right: 0.6rem;
@@ -104,15 +121,27 @@
         font-size: 1.2rem;
     }
 
+    form input{
+         width: 10rem;
+    }
+
     form textarea{
-        width: 15rem;
+        width: 140%;
         height: 5rem;
         font-size: 1rem;
     }
 
+
+
     .contact-content-holder p{
         font-size: 0.6rem;
     }
+
+    .bottom-title{
+       
+        left: 47%;
+    }
+
 
    
     
@@ -145,7 +174,7 @@
 
       .bottom-title{
           font-size: 1em;
-         
+          left: 46%;
       }
 
 
@@ -183,6 +212,16 @@
           display: none;
       }
 
+      form input{
+          width: 8rem;
+      }
+
+      form textarea{
+        width: 100%;
+        height: 5rem;
+        font-size: 1rem;
+    }
+
 
    
     
@@ -213,8 +252,15 @@
         margin-bottom: 1.3rem;
     }
 
+    form input{
+        width: 7rem;
+    }
+
     
-   
+    .bottom-title{
+       
+        left: 44%;
+    }
 
     
 
@@ -299,14 +345,10 @@
     .bottom-title{
         font-size: 0.7rem;
         top: 83%;
-        left: 47%;
+        left: 50%;
     }
 
       
-    .rightpos{
-        right: 47%;
-        
-    }
     
     .skills-content{
         font-size: 1.1em;
@@ -346,6 +388,7 @@
 
     form textarea{
        font-size: 0.7rem;
+      
     }
 
     .right-form h1,.contact-content-holder h1{
@@ -437,12 +480,10 @@
 
    .bottom-title{
        font-size: 1.5rem;
+       left: 49%;
        top: 97%; 
    }
 
-   .rightpos{
-       right: 47%;
-   }
 
    .profile-footer button,.prfooter button{
        font-size: 1.1rem;
@@ -535,10 +576,7 @@
          transform: translate(-50%,-50%);
       }
 
-      .remover,
-      .cancel,
-      .skillsremover,
-      .contact-remover{
+      .remover{
           
         font-size: 4.5rem;
             
@@ -563,19 +601,17 @@
      }
   
      .profile-footer button,.prfooter button{
-        font-size: 1.5rem;
-        padding: 12px;
+        font-size: 1.1rem;
+        width: 12rem;
+        height: 3.2rem;
+        
     }
 
     .bottom-title{
-        font-size: 1.8rem;
-        top: 100%; 
-        right: 46%;
+       left: 51%;
     }
 
-    .rightpos{
-        right: 70%;
-    }
+   
 
     .resume-holder{
         height: 90%;
@@ -591,6 +627,7 @@
    form textarea{
    width: 170%;
    height: 80%;
+   margin-top: 2rem;
    }
     
    .contact-img-holder{
@@ -645,15 +682,18 @@
         width: 44px;
       }
 
+      
+     .profile-footer button,.prfooter button{
+        font-size: 1.3rem;
+        width: 14rem;
+        height: 3.6rem;
+    }
+
 
       .bottom-title{
         font-size: 1.8rem; 
-        right: 44%;
+        
     }
-
-    .rightpos{
-       left: 51.5%;
-      }   
 
 
       .technical-background p{
@@ -711,7 +751,6 @@
     .navbar li:nth-child(1) a::before{
         top: 24.5%;
         width: 45%;
-
        }
 
     .headresume p ,.textresume p{
@@ -775,6 +814,12 @@
         font-size: 2.4rem;
         padding: 5px;
     }
+    
+    .profile-footer button,.prfooter button{
+        font-size: 1.5rem;
+        width: 15.5rem;
+        height: 4rem;
+    }
 
     form span{
         padding: 4px 0px;
@@ -801,15 +846,16 @@
        
       }
 
+      .bottom-title{
+        font-size: 1.8rem; 
+        left: 51.5%;
+    }
+
+
 
 }
 
-@media (min-width:2000px){
 
-    .leftpos{
-        left: 50.5%;
-       }   
-}
 
 
 

@@ -11,6 +11,7 @@
 body,html{
   font-size: 100%;
    overflow:hidden;
+   user-select: none;
 }
 .container{
     width: 100%;
@@ -19,6 +20,7 @@ body,html{
     background-repeat: no-repeat;
     font-family: 'Montserrat', sans-serif;
     position: relative;
+    user-select: none;
 }
 
 header{
@@ -100,10 +102,10 @@ header{
     align-items: center;
     position: relative;
     margin-top: 8em;
-    
+    user-select: none;
 }
 
-.popup-profile,.popup-projects,.popup-skills,.popup-contact{
+.popup-profile,.popup-projects,.popup-skills,.popup-contact,.popup{
     width: 95%;
     height: 90%;
     position: absolute;
@@ -143,9 +145,7 @@ header{
   
 
 .popup-active{
-  
     transform: translate( -50%,-50%);
- 
 }
 
 
@@ -204,12 +204,14 @@ header{
 
 form{
     height: 100%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 3rem 0rem 0rem 4rem;
     margin-top: 1.3rem;
    
+
 }
 
 
@@ -217,7 +219,7 @@ form > div{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    line-height: 2.5rem;
+    line-height: 1.5rem;
     padding-bottom: 1.6rem;
     
 }
@@ -242,8 +244,11 @@ form textarea{
     background: rgb(37, 14, 9);
     color: rgb(212, 209, 209);
     width: 120%;
-    height: 49%;
+    height: 65%;
     cursor:text;
+    z-index: 3;
+    resize: vertical;
+
 }
 
 form textarea:focus{
@@ -271,7 +276,7 @@ form span{
     display: flex;
     width: 93%;
     height: 50%;
-    margin-top: 90px;
+    margin-top: 3rem;
     justify-content: space-evenly;
     line-height: 2;
     font-size: 1.7em;
@@ -386,10 +391,4 @@ form span{
      
   }
 
-
-  
-
-
-
- 
 
