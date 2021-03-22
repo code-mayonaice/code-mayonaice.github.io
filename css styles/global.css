@@ -363,32 +363,3 @@ form span{
 
 
  
-
-  .resume-holder{ 
-    background-image: linear-gradient(40deg, rgb(15, 11, 11),rgb(41, 30, 30));
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     width: 75%;
-     height: 92%;
-     overflow: hidden;
-     overflow-Y: scroll;
-     transform: translate(-50%, 190%);
-     transition: 1s transform;
-     border: 1px solid rgba(134, 7, 7, 0.829);
-     color: #fff;
-     display: grid;
-     z-index: 10;
-     transition: 1s;
-     grid-template-columns: 70% 30%;
-     grid-template-rows: 120px 230px 220px 80px  270px 180px ;
-     grid-template-areas: 'head contacts'
-                          'profile  skills'
-                          ' work skills '
-                          'work  skills'
-                          'work skills'
-                          'education education';
-     
-  }
-
-

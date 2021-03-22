@@ -178,8 +178,6 @@ header span{
 }
 
 
-
-
 .prfooter button{
   outline: none;
   border: none;
@@ -200,10 +198,7 @@ header span{
   color: rgb(190, 183, 183);
 }
 
- .prfooter .btn-download{
-   display: none;
- }
-
+ 
 
 .profile-footer button:hover,.prfooter button:hover{
   transform: scale(1.1);
@@ -245,7 +240,83 @@ header span{
 
 
 
-/* ************ resume styles ************ */
+
+/* ************ arrow animation ************ */
+
+@keyframes arrow{
+
+  20%{
+   
+    transform: scale(1);
+    transform: translateY(0px);
+  }
+
+  40%{
+   
+    transform: scale(1);
+    transform: translateY(10px);
+  }
+   
+  60%{
+   
+    transform: scale(1);
+    transform: translateY(0px);
+  }
+
+  80%{
+   
+    transform: scale(1);
+    transform: translateY(10px);
+  }
+  100%{
+   
+    transform: scale(1);
+    transform: translateY(0px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************ resume styles ************ 
 
 
 .headresume{
@@ -480,37 +551,4 @@ header span{
     background-color: rgb(167, 157, 161);
 }
 
-
-/* ************ arrow animation ************ */
-
-@keyframes arrow{
-
-  20%{
-   
-    transform: scale(1);
-    transform: translateY(0px);
-  }
-
-  40%{
-   
-    transform: scale(1);
-    transform: translateY(10px);
-  }
-   
-  60%{
-   
-    transform: scale(1);
-    transform: translateY(0px);
-  }
-
-  80%{
-   
-    transform: scale(1);
-    transform: translateY(10px);
-  }
-  100%{
-   
-    transform: scale(1);
-    transform: translateY(0px);
-  }
-}
+*/

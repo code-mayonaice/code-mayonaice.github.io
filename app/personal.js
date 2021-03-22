@@ -45,20 +45,12 @@ function home(){
 }
 
 
-function resume(){
-
-  const resumeholder = document.querySelector('.resume-holder');
-  resumeholder.classList.add('resume-active');
-  
-}
-
 function remove(){
  
   const profilepopup = document.querySelector('.popup-profile');
   const contactpopup = document.querySelector('.popup-contact');
   const skillstpopup = document.querySelector('.popup-skills');
   const projectpopup = document.querySelector('.popup-projects');
-  
 
   profilepopup.classList.remove('popup-active'); 
   skillstpopup.classList.remove('popup-active'); 
@@ -73,10 +65,6 @@ function hamburger(){
   hamburgernav.classList.toggle('responisve-navbar-active');
 }
 
-function resumeremove(){
-  const resumeholder = document.querySelector('.resume-holder');
-  resumeholder.classList.remove('resume-active');
-}
 
 
 

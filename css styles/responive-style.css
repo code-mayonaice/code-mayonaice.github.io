@@ -402,7 +402,7 @@
     }
 
     form textarea{
-        width: 7.8rem;
+        width: 6rem;
         height: 4rem;
     }
 
@@ -532,25 +532,6 @@
       height: 65%;
   }
   
-  .headresume p ,.textresume p{
-      font-size: 0.8rem;
-  }
-      
-  .headresume h1{
-         font-size: 2rem;
-  }
-
-  .profileresume p,.skillsresume P,.workresume p,.educationresume-holder p{
-    font-size: 1.1rem;
- }
-  .resume-holder{
-    grid-template-rows: 120px 230px 220px 80px  350px 200px ;
-   
-  }
- 
-  .resume-remover{
-      font-size: 4rem;
-  }
 
 
 }
@@ -753,34 +734,6 @@
         width: 45%;
        }
 
-    .headresume p ,.textresume p{
-        font-size: 1.1rem;
-    }
-        
-    .headresume h1{
-           font-size: 2.7rem;
-    }
-
-    .headresume h2{
-        font-size:2rem ;
-    }
-  
-    .profileresume p,.skillsresume P,.workresume p,.educationresume-holder p{
-      font-size: 1.3rem;
-   }
-
-    .experience h1{
-        margin-bottom: 6rem;
-    }
-
-    .educationresume{
-           margin-top: 4.2rem;
-    }
-
-    .resume-holder{
-        grid-template-rows: 135px 300px 220px 100px  350px 200px;
-    }
-
          
 }
 
@@ -824,27 +777,6 @@
     form span{
         padding: 4px 0px;
     }
-
-    .profileresume p,.skillsresume P,.workresume p,.educationresume-holder p{
-        font-size: 1.5rem;
-     }
-
-    .contentresume > div{
-        margin-top: 7rem;
-    }
-
-    .synopsisresume p{
-       
-        margin-top: 2rem;
-    }
-    .synopsisresume p::before{
-        height: 10%;
-    }
-
-    .resume-holder{
-        grid-template-rows: 135px 300px 220px 100px  350px 300px ;
-       
-      }
 
       .bottom-title{
         font-size: 1.8rem; 
