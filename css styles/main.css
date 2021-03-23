@@ -236,6 +236,11 @@ header span{
   transform: translateY(0);
 }
 
+.btn-view a,.btn-code a{
+  color: #fff;
+  text-decoration: none;
+}
+
 
 
 
