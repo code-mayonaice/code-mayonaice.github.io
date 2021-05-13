@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css styles/main.css">
-    <link rel="stylesheet" href="css styles/responive-style.css">
+    <link rel="stylesheet" href="/app/css styles/global.css">
+    <link rel="stylesheet" href="/app/css styles/responive-style.css">
     
     <title>my portfolio</title>
 </head>
@@ -15,13 +15,12 @@
 <body>
 
 
-    <div class="container">
-
+    <div class="container">        
 
   <header>
         <h1><span>N</span>hoel<span>.</span></h1>
            
-        <ul class="navbar">
+        <ul class="navbar ">
             <li><a href="#">home</a></li>
             <li onclick="profile()" ><a href="#">profile</a></li>
             <li onclick="projects()" ><a href="#">projects</a></li>
@@ -31,24 +30,31 @@
         </ul>
 
         <div class="hamburger">
-            <img onclick="hamburger()" src="web-pictures/icons8-menu-40.png" alt="hamburger menu">
+            <img src="/app/web-pictures/icons/icons8-menu-40.png" alt="hamburger menu">
         </div>
-          
+
         
         <div class="responsive-navbar-container">
 
-        <ul class="responisve-navbar">
-
-            <li onclick="profile()" class="profilenav"><a href="#">profile</a></li>
-            <li onclick="projects()" class="projectnav"><a href="#">projects</a></li>
-            <li onclick="skills()" class="skillnav"><a href="#">skills</a></li>
-            <li onclick="contact()" class="contactnav"><a href="#">contact</a></li>
-
-        </ul>
+            <ul class="responisve-navbar">
+    
+                <li onclick="profile()" class="profilenav"><a href="#">profile</a></li>
+                <li onclick="projects()" class="projectnav"><a href="#">projects</a></li>
+                <li onclick="skills()" class="skillnav"><a href="#">skills</a></li>
+                <li onclick="contact()" class="contactnav"><a href="#">contact</a></li>
+    
+            </ul>
+            
+        </div>
+    
+          
         
-    </div>
 
     </header>
+
+
+
+  
 
 
     <div class="body">
@@ -57,21 +63,21 @@
        
     </div>
 
-    <div class="footer-section profile-footer">
+    <div class="footer-section">
 
         <p>&copy Nhoel Revilla</p>
 
-        <div class="arrow">
-            <img onclick="profile()" src="web-pictures/icons8-up-arrow-35.png" alt="arrow">
+        <div class="arrow profile">
+            <img  src="/app/web-pictures/icons/icons8-up-arrow-35.png" alt="arrow">
         </div>
           
 
         <div class="social-links">
          
-           <a href="https://github.com/code-mayonaice" target="_blank"><img src="web-pictures/icons8-github-24 (1).png" alt="twitter icon"></a>
-           <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1" target="_blank"><img src="web-pictures/icons8-gmail-login-24.png" alt="gmail icon"></a>
-           <a href="https://www.linkedin.com/feed/" target="_blank"><img src="web-pictures/icons8-linkedin-24.png" alt="linkedin icon"></a>
-           <a href="https://www.facebook.com/Maybeitsme.nhoel/" target="_blank"> <img src="web-pictures/icons8-facebook-24.png" alt="facebook icon"></a>
+           <a href="https://github.com/code-mayonaice" target="_blank"><img src="/app/web-pictures/icons/icons8-github-24 (1).png" alt="twitter icon"></a>
+           <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1" target="_blank"><img src="/app/web-pictures/icons/icons8-gmail-login-24.png" alt="gmail icon"></a>
+           <a href="https://www.linkedin.com/feed/" target="_blank"><img src="/app/web-pictures/icons/icons8-linkedin-24.png" alt="linkedin icon"></a>
+           <a href="https://www.facebook.com/Maybeitsme.nhoel/" target="_blank"> <img src="/app/web-pictures/icons/icons8-facebook-24.png" alt="facebook icon"></a>
 
         </div>
      
@@ -81,17 +87,14 @@
 
 
        
-       <div class="popup-profile">
+       <div class="popupcontainer popup-profile ">
 
         
           <p class="main-title"> profile</p>
-        <div onclick="remove()" class="remover">+</div>
+        <div class="remover profile">+</div>
 
 
         <div class="content">
-
-    
-         <img class="profile-img" src="web-pictures/n-logo1.png" alt="logo">
    
 
          <div class="technical-background">
@@ -116,18 +119,18 @@
 
         <div class="prfooter">
 
-         <button class="btn-download"><a href="resume/nhoelresume.pdf" download> download resume</a></button>
+         <button class="btn-download"><a href="/app/resume/nhoelresume.pdf" download> download resume</a></button>
 
-         <div class="projects-arrow arrow ">
-             <img onclick="projects()" src="web-pictures/icons8-up-arrow-35.png" alt="">
+         <div class="arrow projects">
+             <img  src="/app/web-pictures/icons/icons8-up-arrow-35.png" alt="">
          </div>
               
          <div class="social-links">
            
-            <a href="https://github.com/code-mayonaice" target="_blank"><img src="web-pictures/icons8-github-24 (1).png" alt="twitter icon"></a>
-            <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1" target="_blank"> <img src="web-pictures/icons8-gmail-login-24.png" alt="gmail icon"></a>
-            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="web-pictures/icons8-linkedin-24.png" alt="linkedin icon"></a>
-            <a href="https://www.facebook.com/Maybeitsme.nhoel/" target="_blank"> <img src="web-pictures/icons8-facebook-24.png" alt="facebook icon"></a>
+            <a href="https://github.com/code-mayonaice" target="_blank"><img src="/app/web-pictures/icons/icons8-github-24 (1).png" alt="twitter icon"></a>
+            <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1" target="_blank"> <img src="/app/web-pictures/icons/icons8-gmail-login-24.png" alt="gmail icon"></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="/app/web-pictures/icons/icons8-linkedin-24.png" alt="linkedin icon"></a>
+            <a href="https://www.facebook.com/Maybeitsme.nhoel/" target="_blank"> <img src="/app/web-pictures/icons/icons8-facebook-24.png" alt="facebook icon"></a>
 
         </div>
 
@@ -138,10 +141,12 @@
  
    
 
+  
+    
 
-
-    <div class="popup-projects">
-        <div onclick="remove()" class="remover">+</div>
+    <div class="popupcontainer popup-projects">
+        <div class="opacity"></div>
+        <div class="remover projects">+</div>
 
     <p class="main-title">projects</p>
     
@@ -149,59 +154,57 @@
 
       <div class="projects-image">
 
-     <div class = "overlayimg">
 
-        <a href="https://tragvelloca.000webhostapp.com/"><img  src="web-pictures/travel.png" alt="web project"></a>
+        <div class="projects-box box1">
+
+           <img  class="fitness-image" src="app/web-pictures/fitness.png" alt="">
+           
+        </div>
+
+        <div class="projects-box box2">
+           <img src="/app/web-pictures/Screenshot (15).png" alt="">
+        </div>
+
+        <div class="projects-box box3">
+            <img src="/app/web-pictures/project2.png" alt="">
+
+        </div>
+        <div class="projects-box box4">
+            <img src="/app/web-pictures/Screenshot (12).png" alt="">
+
+        </div>
         
-        <div class="overlay">
+        <div class="projects-box box5">
+         <img src="/app/web-pictures/figma.png" alt="">
+        </div>
+        <div class="projects-box box6">
 
-           <button class="btn-view"><a href="https://tragvelloca.000webhostapp.com/" target="_blank"> view website</a></button>
+        </div>
+        <div class="projects-box box7">
 
-           <button class="btn-code"><a href="https://github.com/code-mayonaice/n-travels" target="_blank">view code</a></button>
+        </div>
+        <div class="projects-box box8">
+
         </div>
 
-     </div>
 
-     <div class = "overlayimg">
-
-        <a href="https://fitnessguardian123.netlify.app/" target="_blank"><img  src="web-pictures/fitness.png" alt="web project"></a>
-        
-        <div class="overlay">
-
-           <button class="btn-view"> <a href="https://fitnessguardian123.netlify.app/" target="_blank">view website</a> </button>
-           <button class="btn-code"><a href="https://github.com/code-mayonaice/fitnessguardian-project/tree/master" target="_blank" >view code</a></button>
-        </div>
-
-     </div>
-
-     <div class = "overlayimg">
-
-        <a href="https://footsanity.netlify.app/"><img  src="/web-pictures/Screenshot (15).png" alt="web project"></a>
-        <div class="overlay">
-
-           <button class="btn-view"><a href="https://footsanity.netlify.app/" target="_blank" >view website</a></button>
-           <button class="btn-code"><a href="https://github.com/code-mayonaice/mens-shoes" target="_blank" >view code</a></button>
-        </div>
-
-     </div>
-
-    </div>
+      </div>
     
     
     <div class="prfooter">
 
        <a href="https://github.com/code-mayonaice?tab=repositories"  target="_blank" ><button type="button">view other projects</button></a>
 
-        <div class="arrow">
-            <img onclick="skills()" src="web-pictures/icons8-up-arrow-35.png" alt="">
+        <div class="arrow contacts">
+            <img src="/app/web-pictures/icons/icons8-up-arrow-35.png" alt="">
         </div>
        
         <div class="social-links">
            
-            <a href="https://github.com/code-mayonaice" target="_blank"><img src="web-pictures/icons8-github-24 (1).png" alt="twitter icon"></a>
-            <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1" target="_blank"> <img src="web-pictures/icons8-gmail-login-24.png" alt="gmail icon"></a>
-            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="web-pictures/icons8-linkedin-24.png" alt="linkedin icon"></a>
-            <a href="https://www.facebook.com/Maybeitsme.nhoel/" target="_blank"> <img src="web-pictures/icons8-facebook-24.png" alt="facebook icon"></a>
+            <a href="https://github.com/code-mayonaice" target="_blank"><img src="/app/web-pictures/icons/icons8-github-24 (1).png" alt="twitter icon"></a>
+            <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1" target="_blank"> <img src="/app/web-pictures/icons/icons8-gmail-login-24.png" alt="gmail icon"></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="/app/web-pictures/icons/icons8-linkedin-24.png" alt="linkedin icon"></a>
+            <a href="https://www.facebook.com/Maybeitsme.nhoel/" target="_blank"> <img src="/app/web-pictures/icons/icons8-facebook-24.png" alt="facebook icon"></a>
 
         </div>
 
@@ -217,11 +220,11 @@
 
 
 
-        <div class="popup-skills">
+        <div class="popupcontainer popup-skills">
 
             <p class="main-title">skills</p>
  
-       <div onclick="remove()" class="remover">+</div>
+       <div class="remover skills">+</div>
 
 
 
@@ -235,6 +238,8 @@
                 <li>css 3</li>
                 <li>bootstrap</li>
                 <li>javascript</li>
+                <li>jquery</li>
+                <li>php</li>
 
             </ul>
         </div>
@@ -280,17 +285,17 @@
 
        <div class=" prfooter">
 
-        <button class="btn-download"><a href="resume/nhoelresume.pdf" target="_blank" download> download resume</a></button>
+        <button class="btn-download"><a href="/app/resume/nhoelresume.pdf" target="_blank" download> download resume</a></button>
         <div class="arrow">
-            <img onclick="contact()" src="web-pictures/icons8-up-arrow-35.png" alt="">
+            <img  src="/app/web-pictures/icons/icons8-up-arrow-35.png" alt="">
         </div>
              
         <div class="social-links">
            
-            <a href="https://github.com/code-mayonaice" target="_blank"><img src="web-pictures/icons8-github-24 (1).png" alt="twitter icon"></a>
-            <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1" target="_blank"><img src="web-pictures/icons8-gmail-login-24.png" alt="gmail icon"></a>
-            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="web-pictures/icons8-linkedin-24.png" alt="linkedin icon"></a>
-            <a href="https://www.facebook.com/Maybeitsme.nhoel/" target="_blank"> <img src="web-pictures/icons8-facebook-24.png" alt="facebook icon"></a>
+            <a href="https://github.com/code-mayonaice" target="_blank"><img src="/app/web-pictures/icons/icons8-facebook-24.png" alt="twitter icon"></a>
+            <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1" target="_blank"><img src="/app/web-pictures/icons/icons8-gmail-login-24.png" alt="gmail icon"></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="/app/web-pictures/icons/icons8-linkedin-24.png" alt="linkedin icon"></a>
+            <a href="https://www.facebook.com/Maybeitsme.nhoel/" target="_blank"> <img src="/app/web-pictures/icons/icons8-facebook-24.png" alt="facebook icon"></a>
 
         </div>
        <h3 class="bottom-title leftpos">contact</h3>
@@ -301,11 +306,11 @@
 
 
 
-        <div class="popup-contact">
+        <div class="popupcontainer popup-contact">
 
             <p class="main-title"> contact</p>
      
-            <div onclick="remove()" class="remover">+</div>
+            <div  class="remover contact">+</div>
 
            
           
@@ -317,9 +322,9 @@
                       
                        <div class="contact-img-holder">
                     
-                        <img src="web-pictures/icons8-place-marker-24.png" alt="">
-                        <img src="web-pictures/icons8-phone-24.png" alt="">
-                        <img src="web-pictures/icons8-whatsapp-24.png" alt="">
+                        <img src="/app/web-pictures/icons/icons8-place-marker-24.png" alt="">
+                        <img src="/app/web-pictures/icons/icons8-phone-24.png" alt="">
+                        <img src="/app/web-pictures/icons/icons8-whatsapp-24.png" alt="">
 
                        </div>
                       
@@ -389,34 +394,207 @@
 
              <button type="button">submit information</button>
 
-             <div class="arrow">
-                 <img onclick="home()" src="web-pictures/icons8-down-arrow-35.png" alt="">
+             <div class="arrow home">
+                 <img src="/app/web-pictures/icons/icons8-down-arrow-35.png" alt="">
              </div>
                   
              <div class="social-links">
              
-                <a href="https://github.com/code-mayonaice" target="_blank"><img src="web-pictures/icons8-github-24 (1).png" alt="twitter icon"></a>
-                <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1" target="_blank"><img src="web-pictures/icons8-gmail-login-24.png" alt="gmail icon"></a>
-                <a href="https://www.linkedin.com/feed/" target="_blank"><img src="web-pictures/icons8-linkedin-24.png" alt="linkedin icon"></a>
-                <a href="https://www.facebook.com/Maybeitsme.nhoel/" target="_blank"> <img src="web-pictures/icons8-facebook-24.png" alt="facebook icon"></a>
+                <a href="https://github.com/code-mayonaice" target="_blank"><img src="/app/web-pictures/icons/icons8-github-24 (1).png" alt="twitter icon"></a>
+                <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app&pli=1" target="_blank"><img src="/app/web-pictures/icons/icons8-gmail-login-24.png" alt="gmail icon"></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank"><img src="/app/web-pictures/icons/icons8-linkedin-24.png" alt="linkedin icon"></a>
+                <a href="https://www.facebook.com/Maybeitsme.nhoel/" target="_blank"> <img src="/app/web-pictures/icons/icons8-facebook-24.png" alt="facebook icon"></a>
 
             </div>
             <h3 class="bottom-title rightpos">home</h3>
         </div>
                  
 
-
-
              </div>
-     
-          
+
+
+        <div class="fitness-project-popup project-section">
+
+
+            <div class="image-longsrc">
+
+            <img  src="/app/web-pictures/fitnesslong.png" alt="">
+
+           </div>
+  
+           <div class="otherside">
+               
+            <span class="cancel">&times;</span>
+
+            <div class="project-info">
+               <p>this is a simple  full one page static website of a Gym 
+                   it has its Home , Packages , Testimonials , Contact , About and a Footer 
+                   section
+               </p>
+
+               <p>Stacks used: HTML CSS</p>
+            
+            </div>
+         
+            <div class="viewbtn">
+                <button class="btn"><a target="_blank" href="https://fitnessguardian123.netlify.app/">view website</a></button>
+                <button class="btn"><a target="_blank" href="https://github.com/code-mayonaice/fitnessguardian-project/tree/master">view code</a></button>
+            </div>
+
+        </div>
+             
+        </div>
+
+
+
         
+        <div class="footsanity-project-popup project-section">
+
+
+            <div class="image-longsrc">
+
+            <img  src="/app/web-pictures/footsanitylong.png" alt="">
+
+           </div>
+  
+           <div class="otherside">
+               
+            <span class="cancel">&times;</span>
+
+            <div class="project-info">
+               <p>this is a E-ecommerce site specially for mens shoes , Where you can order and
+                   add it to the cart section . It takes count on your items and sum it up.
+               </p>
+
+               <p>Stacks used: HTML CSS Javascript</p>
+            
+            </div>
+         
+            <div class="viewbtn">
+                <button class="btn"><a target="_blank" href="https://footsanity.netlify.app/">view website</a></button>
+                <button class="btn"><a target="_blank" href="https://github.com/code-mayonaice/mens-shoes">view code</a></button>
+            </div>
+
+        </div>
+             
+        </div>
+
+
+   
+
+        
+        <div class="realestate-project-popup project-section">
+
+
+            <div class="image-longsrc">
+
+            <img  src="/app/web-pictures/footsanitylong.png" alt="">
+
+           </div>
+  
+           <div class="otherside">
+               
+            <span class="cancel">&times;</span>
+
+            <div class="project-info">
+               <p>this is a E-ecommerce site specially for mens shoes , Where you can order and
+                   add it to the cart section . It takes count on your items and sum it up.
+               </p>
+
+               <p>Stacks used: HTML CSS Javascript</p>
+            
+            </div>
+         
+            <div class="viewbtn">
+                <button class="btn">view website</button>
+                <button class="btn">view code</button>
+            </div>
+
+        </div>
+             
+        </div>
+
+     
+
+        
+        <div class="portfolio-project-popup project-section">
+
+
+            <div class="image-longsrc">
+
+            <img  src="/app/web-pictures/Screenshot (12).png" alt="">
+
+           </div>
+  
+           <div class="otherside">
+               
+            <span class="cancel">&times;</span>
+
+            <div class="project-info">
+               <p>this is my first portfolio it showcase everything about me including my
+                 technical backgrounds , projects that I made , skills that I posses and what im capable 
+                 of as a Web developer.  
+               </p>
+
+               <p>Stacks used: HTML CSS Javascript</p>
+            
+            </div>
+         
+            <div class="viewbtn">
+                <button class="btn"><a target="_blank" href="https://code-mayonaice.github.io/">view website</a></button>
+                <button class="btn"><a target="_blank" href="https://github.com/code-mayonaice/code-mayonaice.github.io/tree/master">view code</a></button>
+            </div>
+
+        </div>
+             
+        </div>
+
+
+
+        <div class="figma-project-popup project-section">
+
+
+            <div class="image-longsrc">
+
+            <img  src="/app/web-pictures/desktop design.jpg" alt="">
+
+           </div>
+  
+           <div class="otherside">
+               
+            <span class="cancel">&times;</span>
+
+            <div class="project-info">
+               <p>this is a website design for a company called infiteplanner a wedding 
+                   planner company
+               </p>
+
+               <p>software used: Figma</p>
+            
+            </div>
+         
+            <div class="viewbtn">
+                <button class="btn"><a href="#">view design</a></button>
+               
+            </div>
+
+        </div>
+             
+        </div>
+
+
+
+
+
+             
+
+
       
             
             </div>
       
 
     
-    <script src="app/personal.js"></script>
+    <script src="/app/js/personal.js"></script>
 </body>
 </html>
