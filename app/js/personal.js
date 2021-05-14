@@ -4,7 +4,7 @@
  const popupcontainer = document.querySelectorAll('.popupcontainer');
  const profilepopup = document.querySelector('.popup-profile');
  const contactpopup = document.querySelector('.popup-contact');
- const skillstpopup = document.querySelector('.popup-skills');
+ const skillspopup = document.querySelector('.popup-skills');
  const projectpopup = document.querySelector('.popup-projects');
  const arrowselect = document.querySelectorAll('.arrow');
 
@@ -21,6 +21,9 @@ arrowselect.forEach(function(arrow){  // arrow button eventlistener
      else if(arrow.classList.contains('projects')){
       projectpopup.classList.add('popup-active');
      }
+     else if(arrow.classList.contains('skills')){
+      skillspopup.classList.add('popup-active');
+     }
      else if(arrow.classList.contains('contacts')){
       contactpopup.classList.add('popup-active');
      }
@@ -28,11 +31,12 @@ arrowselect.forEach(function(arrow){  // arrow button eventlistener
 
       profilepopup.classList.remove('popup-active');
       projectpopup.classList.remove('popup-active');
+      skillspopup.classList.remove('popup-active');
       contactpopup.classList.remove('popup-active');
 
      }
 
-  });
+ });
 
 });
 
@@ -51,7 +55,7 @@ remover.forEach(function(remove){
       projectpopup.classList.remove('popup-active');
     }
     else if(remove.classList.contains('skills')){
-     skillstpopup.classList.remove('popup-active');
+     skillspopup.classList.remove('popup-active');
     }
     else if(remove.classList.contains('contact')){
       contactpopup.classList.remove('popup-active');
